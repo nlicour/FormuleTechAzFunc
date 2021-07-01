@@ -1,0 +1,8 @@
+<div>
+  <label>RBG Picker -></label> 
+  <p-colorPicker [(ngModel)]="color" format="rgb"></p-colorPicker>
+  <p>R:{{color.r}}, G:{{color.g}}, B:{{color.b}}</p>
+  <button pButton pRipple type="button" icon="pi pi-check" class="p-button-rounded" (click)="setLedRgbAsync()"></button>
+  <button pButton pRipple type="button" icon="pi pi-power-off" class="p-button-rounded p-button-success" (click)="switchOnAsync()"></button>
+  <button pButton pRipple type="button" icon="pi pi-power-off" class="p-button-rounded p-button-danger" (click)="switchOffAsync()"></button>
+</div>
